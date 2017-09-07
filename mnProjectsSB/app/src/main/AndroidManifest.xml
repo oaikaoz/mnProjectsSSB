@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kao.brontras">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logobarcode"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".settingServerActivity"
+            android:label="@string/title_activity_setting_server"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImportBarcodeActivity"
+            android:label="@string/title_activity_import_barcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExportBarcodeActivity"
+            android:label="@string/title_activity_export_barcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".showCheckBarcodeActivity"
+            android:label="@string/title_activity_show_check_barcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CheckBarcodeActivity"
+            android:label="@string/title_activity_check_barcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InformationScanBarcodesActivity"
+            android:label="@string/title_activity_information_scan_barcodes"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

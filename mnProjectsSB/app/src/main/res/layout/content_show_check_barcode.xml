@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kao.brontras.showCheckBarcodeActivity"
+    tools:showIn="@layout/app_bar_show_check_barcode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/bgColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shap_spinner_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tagBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:hint="สแกนบาร์โค้ด......"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ListView
+                android:divider="@null"
+                android:visibility="gone"
+                android:id="@+id/listlotsize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+
+              />
+            <RelativeLayout
+                android:id="@+id/rtlNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/imageLabel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_error_outline_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageLabel"
+                    android:layout_marginTop="20dp"
+                    android:text="ไม่มีข้อมูล"
+                    android:textSize="15sp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

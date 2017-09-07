@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgColor">#3b3c3d</color>
+    <color name="navDetil">#dcd9d9</color>
+    <color name="navHead">#1a1a1b</color>
+    <color name="fontSpinner">#4e4d4d</color>
+    <color name="BgSpinner">@android:color/white</color>
+    <color name="colorSPDetailEx">#686868</color>
+    <color name="colorSPHeaderEx">#afafaf</color>
+</resources>

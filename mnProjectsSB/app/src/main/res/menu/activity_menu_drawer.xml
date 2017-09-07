@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_import"
+            android:icon="@drawable/icon_barcode"
+            android:title="นำเข้าสโตร์" />
+        </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_export"
+            android:icon="@drawable/icon_barcode"
+            android:title="จ่ายออก" />
+        </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_check"
+            android:icon="@drawable/icon_barcode"
+            android:title="เช็คบาร์โค้ด" />
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_checkStore"
+            android:icon="@drawable/icon_barcode"
+            android:title="ตรวจสอบสต๊อค" />
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Setting Server" />
+    </group>
+    <group android:checkableBehavior="none">line
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_delete"
+            android:title="Logout" />
+    </group>
+
+</menu>

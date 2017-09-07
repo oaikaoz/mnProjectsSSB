@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Barcode</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list_barcode">listBarcodeActivity</string>
+    <string name="title_activity_setting_server">settingServerActivity</string>
+    <string name="title_activity_import_barcode">ImportBarcode</string>
+    <string name="title_activity_export_barcode">ExportBarcode</string>
+    <string name="title_activity_show_check_barcode">showCheckBarcode</string>
+    <string name="title_activity_check_barcode">CheckBarcode</string>
+    <string name="title_activity_information_scan_barcodes">InformationScanBarcodesActivity</string>
+</resources>
